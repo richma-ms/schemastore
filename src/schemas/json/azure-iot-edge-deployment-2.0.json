@@ -355,9 +355,11 @@
                     "examples": [
                         "mcr.microsoft.com/azureiotedge-agent:1.0"
                     ]
-                },
-                "createOptions": {
-                    "$ref": "#/definitions/createOptions"
+                }
+            },
+            "patternProperties": {
+                "^createOptions[0-9]*$": {
+                "$ref": "#/definitions/createOptions"
                 }
             },
             "additionalProperties": false
